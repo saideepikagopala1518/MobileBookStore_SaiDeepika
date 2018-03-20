@@ -26,9 +26,19 @@ class MBConstants{
         static let BookTableViewCellIdentifier = "bookCellIdentifier"
     }
     
+    //NIB details
+    struct NibNames {
+        static let BookTableViewNib = "MBBookTableViewCell"
+    }
+    
     //StoryboardIdentifiers
     struct StoryboardIdentifiers {
         static let MainStoryboardIdentifier = "Main"
         static let MBDetailViewControllerIdentifier = "MBDetailViewController"
+    }
+    
+    //HelperTexts
+    struct HelperTexts {
+        static let ByText = "by "
     }
 }

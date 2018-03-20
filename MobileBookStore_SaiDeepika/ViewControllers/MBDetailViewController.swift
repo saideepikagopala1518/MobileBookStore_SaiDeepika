@@ -34,7 +34,8 @@ class MBDetailViewController: UIViewController {
         }
         
         if let authorName = bookModel?.author{
-           
+            bookAuthorName.text = MBConstants.HelperTexts.ByText + authorName
+        }else{
             bookAuthorName.text = ""
         }
         
