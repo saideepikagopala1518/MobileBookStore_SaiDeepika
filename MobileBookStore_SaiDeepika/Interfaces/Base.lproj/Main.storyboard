@@ -117,9 +117,9 @@
                         <viewLayoutGuide key="safeArea" id="cxO-9P-kLt"/>
                     </view>
                     <connections>
-                        <outlet property="bookAuthorName" destination="7uN-nU-xdr" id="EfD-oL-7zv"/>
-                        <outlet property="bookImageView" destination="OU9-zM-JYU" id="HHY-Y7-TVB"/>
-                        <outlet property="bookTitle" destination="ZL4-SK-2bh" id="rdB-2f-kwo"/>
+                        <outlet property="bookAuthorName" destination="7uN-nU-xdr" id="gnR-oD-YXH"/>
+                        <outlet property="bookImageView" destination="OU9-zM-JYU" id="hcg-0p-E7D"/>
+                        <outlet property="bookTitle" destination="ZL4-SK-2bh" id="QyF-Rf-2QM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jJM-38-bHI" userLabel="First Responder" sceneMemberID="firstResponder"/>

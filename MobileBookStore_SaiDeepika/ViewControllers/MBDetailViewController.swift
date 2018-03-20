@@ -9,12 +9,46 @@
 import UIKit
 
 class MBDetailViewController: UIViewController {
-
+    //MARK: - Properties
+    @IBOutlet weak var bookTitle: UILabel!
+    @IBOutlet weak var bookAuthorName: UILabel!
+    @IBOutlet weak var bookImageView: UIImageView!
+    var bookModel:MBBookModel?
+    
+    // MARK: - View Lifecycle
+    // MARK: -
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        self.title = MBConstants.ScreenTitles.DetailScreenTitle
+        configureDetailsView()
+        
     }
+    // MARK: - configureDetailsView
+    // MARK: -
+    func configureDetailsView() {
+        //Set book title
+        if let title = bookModel?.title {
+            bookTitle.text = title
+        }
+        
+        if let authorName = bookModel?.author{
+           
+            bookAuthorName.text = ""
+        }
+        
+        if let imageUrl = bookModel?.bookImageUrl{
+            MBServiceManager.shared.downloadImageFromURL(url: imageUrl) { downloadedImage in
+                DispatchQueue.main.async {
+                    self.bookImageView.image = downloadedImage
+                }
+            }
+        }
+    }
+    
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
