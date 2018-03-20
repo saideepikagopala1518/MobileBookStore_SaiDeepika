@@ -15,6 +15,9 @@
 		F04886042061964500790C69 /* MBServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04886032061964500790C69 /* MBServiceManager.swift */; };
 		F0488606206197FF00790C69 /* MBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0488605206197FF00790C69 /* MBHomeViewController.swift */; };
 		F04886082061982800790C69 /* MBDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04886072061982800790C69 /* MBDetailViewController.swift */; };
+		F048860A20619B8600790C69 /* MBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048860920619B8600790C69 /* MBConstants.swift */; };
+		F048861320619FA100790C69 /* MBBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048861120619FA100790C69 /* MBBookTableViewCell.swift */; };
+		F048861420619FA100790C69 /* MBBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F048861220619FA100790C69 /* MBBookTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F04886032061964500790C69 /* MBServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBServiceManager.swift; sourceTree = "<group>"; };
 		F0488605206197FF00790C69 /* MBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHomeViewController.swift; sourceTree = "<group>"; };
 		F04886072061982800790C69 /* MBDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDetailViewController.swift; sourceTree = "<group>"; };
+		F048860920619B8600790C69 /* MBConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBConstants.swift; sourceTree = "<group>"; };
+		F048861120619FA100790C69 /* MBBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookTableViewCell.swift; sourceTree = "<group>"; };
+		F048861220619FA100790C69 /* MBBookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBookTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,8 @@
 		F04885FF206195CD00790C69 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F048861120619FA100790C69 /* MBBookTableViewCell.swift */,
+				F048861220619FA100790C69 /* MBBookTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		F0488600206195D400790C69 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F048860920619B8600790C69 /* MBConstants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -189,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04885F2206194E900790C69 /* LaunchScreen.storyboard in Resources */,
+				F048861420619FA100790C69 /* MBBookTableViewCell.xib in Resources */,
 				F04885EF206194E900790C69 /* Assets.xcassets in Resources */,
 				F04885ED206194E900790C69 /* Main.storyboard in Resources */,
 			);
@@ -202,9 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0488606206197FF00790C69 /* MBHomeViewController.swift in Sources */,
+				F048861320619FA100790C69 /* MBBookTableViewCell.swift in Sources */,
 				F04886082061982800790C69 /* MBDetailViewController.swift in Sources */,
 				F04886042061964500790C69 /* MBServiceManager.swift in Sources */,
 				F04886022061961800790C69 /* MBBookModel.swift in Sources */,
+				F048860A20619B8600790C69 /* MBConstants.swift in Sources */,
 				F04885E8206194E900790C69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
