@@ -12,6 +12,8 @@
 		F04885ED206194E900790C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04885EB206194E900790C69 /* Main.storyboard */; };
 		F04885EF206194E900790C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04885EE206194E900790C69 /* Assets.xcassets */; };
 		F04885F2206194E900790C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04885F0206194E900790C69 /* LaunchScreen.storyboard */; };
+		F04886022061961800790C69 /* MBBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04886012061961800790C69 /* MBBookModel.swift */; };
+		F04886042061964500790C69 /* MBServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04886032061964500790C69 /* MBServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F04885EE206194E900790C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F04885F1206194E900790C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F04885F3206194E900790C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04886012061961800790C69 /* MBBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookModel.swift; sourceTree = "<group>"; };
+		F04886032061964500790C69 /* MBServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,72 @@
 		F04885E6206194E900790C69 /* MobileBookStore_SaiDeepika */ = {
 			isa = PBXGroup;
 			children = (
-				F04885E7206194E900790C69 /* AppDelegate.swift */,
+				F0488600206195D400790C69 /* Utility */,
+				F04885FF206195CD00790C69 /* Cells */,
+				F04885FD2061957400790C69 /* ServiceManager */,
+				F04885FC2061956A00790C69 /* Models */,
+				F04885FB2061955C00790C69 /* Interfaces */,
+				F04885FA2061955200790C69 /* ViewControllers */,
+				F04885F92061954800790C69 /* AppDelegate */,
 				F04885E9206194E900790C69 /* ViewController.swift */,
-				F04885EB206194E900790C69 /* Main.storyboard */,
 				F04885EE206194E900790C69 /* Assets.xcassets */,
-				F04885F0206194E900790C69 /* LaunchScreen.storyboard */,
 				F04885F3206194E900790C69 /* Info.plist */,
 			);
 			path = MobileBookStore_SaiDeepika;
+			sourceTree = "<group>";
+		};
+		F04885F92061954800790C69 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F04885E7206194E900790C69 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F04885FA2061955200790C69 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F04885FB2061955C00790C69 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F04885EB206194E900790C69 /* Main.storyboard */,
+				F04885F0206194E900790C69 /* LaunchScreen.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F04885FC2061956A00790C69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F04886012061961800790C69 /* MBBookModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F04885FD2061957400790C69 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				F04886032061964500790C69 /* MBServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		F04885FF206195CD00790C69 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F0488600206195D400790C69 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +158,7 @@
 				TargetAttributes = {
 					F04885E3206194E900790C69 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,7 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04886042061964500790C69 /* MBServiceManager.swift in Sources */,
 				F04885EA206194E900790C69 /* ViewController.swift in Sources */,
+				F04886022061961800790C69 /* MBBookModel.swift in Sources */,
 				F04885E8206194E900790C69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +338,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobileBookStore_SaiDeepika/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.MobileBookStore-SaiDeepika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +354,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobileBookStore_SaiDeepika/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.MobileBookStore-SaiDeepika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
